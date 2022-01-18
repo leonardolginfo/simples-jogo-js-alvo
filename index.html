@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Acerte o alvo!</title>
+</head>
+
+<body>
+    <canvas id="teladesenho" width="800" height="600"></canvas>
+
+
+    <script>
+        var tela = document.getElementById('teladesenho');
+        pincel = tela.getContext("2d");
+
+
+        pincel.fillStyle = 'lightgray';
+
+        pincel.fillRect(0, 0, 600, 400);
+
+       
+
+        desenhaCirculo(100, 100, 40, 'red');
+        desenhaCirculo(100, 100, 30, 'white');
+        desenhaCirculo(100, 100, 10, 'red');
+    </script>
+
+
+</body>
+
+</html>
